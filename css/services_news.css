@@ -1,0 +1,86 @@
+.services-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .section-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .section-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .service-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+  
+  .service-box h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .news-item {
+    background: #fafafa;
+    padding: 1.5rem;
+    border-left: 5px solid #007acc;
+    border-radius: 5px;
+  }
+  
+  .news-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+  }
+  

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/section.css" />
+  <link rel="stylesheet" href="css/Hero.css" />
+  <link rel="stylesheet" href="css/cursor.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/services_news.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar-container">
+      <a href="#" class="logo">
+        <img src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite Logo" />
+        <span>CodeWithArham</span>
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="menu">
+        <a href="#home" class="active" onclick="closeMenuAndScroll('#home', 0)">Home</a>
+        <a href="#about" onclick="closeMenuAndScroll('#about', 1)">About</a>
+        <a href="#portfolio" onclick="closeMenuAndScroll('#portfolio', 2)">Portfolio</a>
+        <a href="#services" onclick="closeMenuAndScroll('#services', 3)">Services</a>
+        <a href="#news" onclick="closeMenuAndScroll('#news', 4)">News</a>
+        <a href="#contact" onclick="closeMenuAndScroll('#contact', 5)">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide" id="home">
+        <section class="hero-section">
+          <div class="container">
+            <div class="content">
+              <h2 class="hero-heading">Hi, I'm Muhammad Arham Jamil 👋</h2>
+              <p class="hero-description">
+                <span id="typewriter-text"></span>
+              </p>
+              <a href="javascript:void(0)" onclick="navigateTo(1)" class="btn-primary">
+                About Me
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="image">
+              <img class="image-img" src="public/WhatsApp Image 2025-04-02 at 04.20.18_140d0b16.jpg"
+                alt="image description">
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="swiper-slide" id="about">
+        <section class="about-section">
+          <div class="container">
+            <div class="about-content">
+              <h2 class="section-title">About Me</h2>
+              <p class="section-description">
+                Hi, I'm <strong>Muhammad Arham Jamil</strong>, a passionate Web Developer, Full Stack Enthusiast, and an
+                Associate Teacher for A-level Computer Science at Whales College. With over two years of experience in
+                creating visually appealing, user-friendly interfaces, I specialize in front-end technologies and am
+                always expanding my skills in back-end development to build scalable, robust web applications.
+              </p>
+              <p class="section-description">
+                My journey into web development began with an eagerness to explore the potential of computers and the
+                joy of crafting solutions from code. Having completed my A-levels in Computer Science, I currently
+                balance my passion for development with teaching, inspiring and mentoring students while staying
+                up-to-date with the latest trends in the tech world.
+              </p>
+              <p class="section-description">
+                I am currently pursuing a degree in Computer Science, driven by curiosity and the thrill of
+                problem-solving. I am committed to writing optimized and efficient code while ensuring that the projects
+                I work on are modern, innovative, and adhere to the best practices in the industry.
+              </p>
+              <p class="section-description">
+                Let’s connect and create something amazing together!
+              </p>
+              <a href="javascript:void(0)" onclick="navigateTo(2)" class="btn-primary">
+                View My Portfolio
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="skills-section">
+              <h3 class="skills-title">Skills</h3>
+
+              <div class="skill">
+                <div class="progress-labels">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="90"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="progress-labels">
+                  <span class="skill-name">CSS/Tailwind CSS/Material UI</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="85"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="progress-labels">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="90"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="progress-labels">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="90"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="progress-labels">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-percent">70</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="70"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="progress-labels">
+                  <span class="skill-name">Node.js/express.js</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="70"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="progress-labels">
+                  <span class="skill-name">React.js/Next.js</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" data-progress="80"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+      <div class="swiper-slide" id="portfolio">
+        <div class="scroll-container">
+          <section class="portfolio-section">
+            <h2 class="portfolio-heading">My Portfolio</h2>
+            <div class="portfolio-container">
+              <a href="https://github.com/codewitharham/demo-panaverse-org-CodeWithArham" target="_blank" class="portfolio-item">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="public/project2.png" />
+                  </div>
+                  <div class="card-content">
+                    <div class="tag">DEMO</div>
+                    <h6 class="card-title">Panaverse Organization Demo Website</h6>
+                    <p class="card-description">
+                      A demonstration website showcasing the structure and potential features for the Panaverse DAO organization.
+                    </p>
+                    <div class="portfolio-details">
+                      <h7 class="details-heading">Technologies:</h7>
+                      <ul class="tech-stack">
+                        <li><span class="tech">HTML</span></li>
+                        <li><span class="tech">CSS</span></li>
+                        <li><span class="tech">JavaScript</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://github.com/codewitharham/AuthFolio-NextJs" target="_blank" class="portfolio-item">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="public/project3.png" alt="AuthFolio Next.js App" />
+                  </div>
+                  <div class="card-content">
+                    <div class="tag">FULL STACK</div>
+                    <h6 class="card-title">AuthFolio: Next.js Authentication</h6>
+                    <p class="card-description">
+                      A full-stack authentication application built with Next.js, featuring registration, login, email verification, and password reset.
+                    </p>
+                    <div class="portfolio-details">
+                      <h7 class="details-heading">Technologies:</h7>
+                      <ul class="tech-stack">
+                        <li><span class="tech">Next.js</span></li>
+                        <li><span class="tech">MongoDB</span></li>
+                        <li><span class="tech">JWT</span></li>
+                        <li><span class="tech">Bcrypt</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://github.com/codewitharham/NextCommerce-App" target="_blank" class="portfolio-item">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="public/project4.png" alt="Next.js Commerce App" />
+                  </div>
+                  <div class="card-content">
+                    <div class="tag">E-COMMERCE</div>
+                    <h6 class="card-title">NextCommerce: E-commerce Platform</h6>
+                    <p class="card-description">
+                      A Next.js based e-commerce application with product listings and basic shopping functionalities.
+                    </p>
+                    <div class="portfolio-details">
+                      <h7 class="details-heading">Technologies:</h7>
+                      <ul class="tech-stack">
+                        <li><span class="tech">Next.js</span></li>
+                        <li><span class="tech">React</span></li>
+                        <li><span class="tech">CSS</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://github.com/codewitharham/Simple-Crypto-Converter-Frontend" target="_blank" class="portfolio-item">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="public/Project1.PNG" alt="Simple Crypto Converter" />
+                  </div>
+                  <div class="card-content">
+                    <div class="tag">FRONT-END</div>
+                    <h6 class="card-title">Simple Crypto Converter</h6>
+                    <p class="card-description">
+                      A front-end application for easily converting between different cryptocurrencies.
+                    </p>
+                    <div class="portfolio-details">
+                      <h7 class="details-heading">Technologies:</h7>
+                      <ul class="tech-stack">
+                        <li><span class="tech">React</span></li>
+                        <li><span class="tech">JavaScript</span></li>
+                        <li><span class="tech">CSS</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide" id="services">
+        <div class="scroll-container">
+          <section class="services-section">
+            <div class="container">
+              <div class="section-header">
+                <h2>My Services</h2>
+                <p>I provide a range of development and automation solutions tailored for modern business needs,
+                  ensuring growth, efficiency, and innovation.</p>
+              </div>
+              
+              <div class="services-grid">
+                <div class="service-box">
+                  <h3>Marketing</h3>
+                  <p>Plan, create, and launch campaigns with seamless collaboration across your team to meet monthly
+                    goals effectively.</p>
+                </div>
+                <div class="service-box">
+                  <h3>Legal</h3>
+                  <p>Secure your organization with workflow compliance, structured permissions, and protection for all
+                    legal operations.</p>
+                </div>
+                <div class="service-box">
+                  <h3>Business Automation</h3>
+                  <p>Automate tasks, integrate tools like Slack, and use pre-built templates to enhance your
+                    productivity instantly.</p>
+                </div>
+                <div class="service-box">
+                  <h3>Finance</h3>
+                  <p>Utilize audit-proof software built to handle critical financial operations like budgeting and
+                    month-end close smoothly.</p>
+                </div>
+                <div class="service-box">
+                  <h3>Enterprise Design</h3>
+                  <p>Design delightful and functional user experiences across your entire business—from marketing to
+                    product teams.</p>
+                </div>
+                <div class="service-box">
+                  <h3>Operations</h3>
+                  <p>Keep things running with customized, scalable workflows designed for efficient teams and individual
+                    contributors.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide" id="news">
+        <div class="scroll-container">
+          <section class="news-section">
+            <div class="news-container">
+              <h2 class="section-title">Latest News</h2>
+              <div class="news-list">
+
+                <article class="news-item">
+                  <h3 class="news-title">🚀 Portfolio Website Launched</h3>
+                  <p class="news-date">April 2025</p>
+                  <p class="news-content">
+                    My official portfolio website is now live! Built with Swiper.js, this interactive experience
+                    showcases my projects, services, and more.
+                  </p>
+                </article>
+
+                <article class="news-item">
+                  <h3 class="news-title">🎓 Joined Whales College</h3>
+                  <p class="news-date">October 2024</p>
+                  <p class="news-content">
+                    I’m proud to announce that I’ve joined Whales College as an Associate Teacher for A-level Computer
+                    Science and Mathematics.
+                  </p>
+                </article>
+
+                <article class="news-item">
+                  <h3 class="news-title">🏆 ProBattle 2025 Competition</h3>
+                  <p class="news-date">March 2025</p>
+                  <p class="news-content">
+                    Currently developing a full-stack app for the ProBattle 2025 competition using Next.js, Express,
+                    MongoDB, and Docker.
+                  </p>
+                </article>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="swiper-slide" id="experience">
+        <section class="work-experience">
+          <div class="timeline-container">
+            <div class="timeline-section">
+              <h2>Experience</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h3>Associate Teacher - A-Level CS & Math</h3>
+                  <p><strong>Whales College</strong> | Oct 2024 – Present</p>
+                  <p><em>Sindh, Pakistan (On-site)</em></p>
+                </div>
+                <div class="timeline-item">
+                  <h3>Full Stack Developer (Apprentice)</h3>
+                  <p><strong>Panaverse</strong> | Aug 2022 – Jan 2025</p>
+                  <p><em>Karachi, Pakistan (Hybrid)</em></p>
+                  <p>Skills: JavaScript, React.js, Tailwind CSS, TypeScript, Node.js, Next.js</p>
+                </div>
+                <div class="timeline-item">
+                  <h3>Full Stack Developer (Apprentice)</h3>
+                  <p><strong>PIAIC</strong> | Aug 2022 – Jan 2025</p>
+                  <p><em>Karachi, Pakistan (Hybrid)</em></p>
+                  <p>Skills: JavaScript, React.js, Tailwind CSS, Node.js, Next.js</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-section">
+              <h2>Education</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h3>BS Computer Science</h3>
+                  <p><strong>Karachi University</strong> | Jan 2024 – Jan 2028</p>
+                </div>
+                <div class="timeline-item">
+                  <h3>A-Level (Maths & CS)</h3>
+                  <p><strong>University of Cambridge</strong> | Jul 2022 – Jul 2024</p>
+                  <p>Skills: Python, OOP, Data Structures, Web Dev, ICT, PDLC</p>
+                </div>
+                <div class="timeline-item">
+                  <h3>GCE O’Level (Computer Engineering)</h3>
+                  <p><strong>University of Cambridge</strong> | Aug 2019 – Jun 2022</p>
+                  <p>Grades: 1A*, 5As, 2Bs</p>
+                </div>
+                <div class="timeline-item">
+                  <h3>Elementary & Middle School</h3>
+                  <p><strong>The American Foundation Cambridge School</strong> | Aug 2010 – Aug 2019</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="swiper-slide" id="contact">
+        <section class="contact-section">
+          <div class="container">
+            <div class="contact-grid">
+
+              <div class="contact-info-side">
+                <div class="contact-text">
+                  <p class="section-label">Contact us</p>
+                  <h1 class="section-title">Chat to our friendly team</h1>
+                  <p class="section-subtitle">We’d love to hear from you. Please fill out this form or shoot us an
+                    email.</p>
+                </div>
+
+                <div class="contact-info-grid">
+                  <div class="contact-info-box">
+                    <span class="contact-icon">📧</span>
+                    <h2>Email</h2>
+                    <p>Our friendly team is here to help.</p>
+                    <p class="contact-highlight">hello@merakiui.com</p>
+                  </div>
+
+                  <div class="contact-info-box">
+                    <span class="contact-icon">💬</span>
+                    <h2>Live chat</h2>
+                    <p>Our team is available online.</p>
+                    <p class="contact-highlight">Start new chat</p>
+                  </div>
+
+                  <div class="contact-info-box">
+                    <span class="contact-icon">📍</span>
+                    <h2>Office</h2>
+                    <p>Come say hello at our office HQ.</p>
+                    <p class="contact-highlight">100 Smith Street, Collingwood VIC 3066 AU</p>
+                  </div>
+
+                  <div class="contact-info-box">
+                    <span class="contact-icon">📞</span>
+                    <h2>Phone</h2>
+                    <p>Mon–Fri from 8am to 5pm.</p>
+                    <p class="contact-highlight">+1 (555) 000–0000</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form-box">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label>First Name</label>
+                      <input type="text" placeholder="John" />
+                    </div>
+                    <div class="form-group">
+                      <label>Last Name</label>
+                      <input type="text" placeholder="Doe" />
+                    </div>
+                  </div>
+
+                  <div class="form-group full">
+                    <label>Email address</label>
+                    <input type="email" placeholder="johndoe@example.com" />
+                  </div>
+
+                  <div class="form-group full">
+                    <label>Message</label>
+                    <textarea placeholder="Message"></textarea>
+                  </div>
+
+                  <button type="submit" class="form-button">Send message</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <footer class="sticky-footer">
+    <div class="footer-container">
+      <span class="footer-text">
+        © 2023 <a href="" class="footer-link">CodeWithArham™</a>. All Rights Reserved.
+      </span>
+      <ul class="footer-links">
+        <li><a href="https://www.facebook.com/arham.jamil.142/" target="_blank" class="footer-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li><a href="https://wa.me/03010301256" target="_blank" class="footer-link"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li><a href="https://linkedin.com/in/arhamjamil/" target="_blank" class="footer-link"><i
+              class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/codewitharham" target="_blank" class="footer-link"><i
+              class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/arham_jamil.aj/" target="_blank" class="footer-link"><i
+              class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="custom-cursor"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    let swiperInstance = null;
+    const desktopBreakpoint = 1024; // Width in pixels above which Swiper is enabled
+
+    function initSwiper() {
+      // Only initialize if it doesn't exist and screen is wide enough
+      if (!swiperInstance && window.innerWidth > desktopBreakpoint) {
+        swiperInstance = new Swiper(".mySwiper", {
+          direction: "vertical",
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          mousewheel: {
+            forceToAxis: true,
+            releaseOnEdges: true,
+          },
+          keyboard: {
+            enabled: true,
+          },
+          nested: true,
+          on: {
+            slideChange: () => {
+              if (swiperInstance) { // Check if instance exists before accessing properties
+                updateActiveNavLink(swiperInstance.activeIndex);
+              }
+            }
+          }
+        });
+        // Set initial active link based on Swiper's initial slide
+        updateActiveNavLink(swiperInstance.activeIndex);
+      }
+    }
+
+    function destroySwiper() {
+      if (swiperInstance) {
+        swiperInstance.destroy(true, true); // Destroy Swiper instance and detach event listeners
+        swiperInstance = null;
+        // Optionally reset nav link states if needed when swiper is destroyed
+        resetNavLinks();
+      }
+    }
+
+    function updateActiveNavLink(index) {
+      const links = document.querySelectorAll('.nav-links a');
+      links.forEach(link => link.classList.remove('active'));
+      if (links[index]) {
+        links[index].classList.add('active');
+      }
+    }
+
+    function resetNavLinks() {
+      const links = document.querySelectorAll('.nav-links a');
+      links.forEach(link => link.classList.remove('active'));
+      // Optionally set the first link as active or based on scroll position
+      // For simplicity, let's just remove active class or set the first one
+      if (links[0]) {
+        // links[0].classList.add('active'); // Or leave none active
+      }
+    }
+
+    function handleResize() {
+      if (window.innerWidth > desktopBreakpoint) {
+        initSwiper(); // Initialize if screen becomes wide enough
+      } else {
+        destroySwiper(); // Destroy if screen becomes too narrow
+      }
+    }
+
+    // Navigation logic
+    function navigateTo(index) {
+      if (swiperInstance) {
+        swiperInstance.slideTo(index);
+      } else {
+        // Handle navigation for non-swiper view (mobile/tablet)
+        // Find the target section based on the index or ID
+        const links = document.querySelectorAll('.nav-links a');
+        if (links[index]) {
+          const targetId = links[index].getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            // Manually update active link on scroll navigation
+            updateActiveNavLink(index);
+          }
+        }
+      }
+      closeMenu(); // Close menu after navigation
+    }
+
+    // Close menu and navigate (combines functions)
+    function closeMenuAndScroll(targetId, index) {
+      closeMenu();
+      if (window.innerWidth <= desktopBreakpoint) {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+          updateActiveNavLink(index); // Update link state after scrolling
+        }
+      } else {
+        navigateTo(index); // Use Swiper navigation on desktop
+      }
+    }
+
+    // Menu toggle
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+    function closeMenu() {
+      document.getElementById("menu").classList.remove("show");
+    }
+
+    // Initial check on load
+    handleResize();
+
+    // Add resize listener
+    window.addEventListener('resize', handleResize);
+
+    // --- Typewriter Effect ---
+    const typewriterLines = [
+      "Full Stack (MERN) Developer . . .   . . ",
+      "Associate Teacher for Cambridge O/A Levels . . .   . .",
+      "Building Scalable, Modern Web Apps . . .   . . ",
+      "Mentoring Future Tech Leaders . . .   . . ",
+      "Exploring Web 2.0 & 3.0 Technologies . . .   . . ",
+      "Let's Code Something Amazing Together . . .   . . "
+    ];
+    const typewriterElement = document.getElementById("typewriter-text");
+    let lineIndex = 0;
+    let charIndex = 0;
+    let typing = true;
+
+    function typeWriterEffect() {
+      // Ensure element exists before manipulating
+      if (!typewriterElement) return;
+
+      if (typing) {
+        if (charIndex < typewriterLines[lineIndex].length) {
+          typewriterElement.textContent += typewriterLines[lineIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriterEffect, 75); // typing speed
+        } else {
+          typing = false;
+          setTimeout(typeWriterEffect, 1000); // pause before backspacing
+        }
+      } else {
+        if (charIndex > 0) {
+          typewriterElement.textContent = typewriterElement.textContent.slice(0, -1);
+          charIndex--;
+          setTimeout(typeWriterEffect, 40); // delete speed
+        } else {
+          typing = true;
+          lineIndex = (lineIndex + 1) % typewriterLines.length;
+          setTimeout(typeWriterEffect, 500); // pause before new line
+        }
+      }
+    }
+    // Start typing effect only if element exists
+    if (typewriterElement) {
+      typeWriterEffect();
+    }
+
+    // --- Custom Cursor ---
+    const cursor = document.querySelector('.custom-cursor');
+    // Check if cursor element exists
+    if (cursor) {
+      let mouseX = 0, mouseY = 0;
+      let currentX = 0, currentY = 0;
+      const speed = 0.15; // Lower is slower (more trailing)
+
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function animateCursor() {
+        currentX += (mouseX - currentX) * speed;
+        currentY += (mouseY - currentY) * speed;
+        cursor.style.transform = `translate(${currentX}px, ${currentY}px)`;
+        requestAnimationFrame(animateCursor);
+      }
+
+      animateCursor();
+    }
+
+    // JavaScript to trigger the skill bar animation
+    document.addEventListener('DOMContentLoaded', function () {
+      const progressBars = document.querySelectorAll('.progress');
+      progressBars.forEach(bar => {
+        const progressValue = bar.dataset.progress;
+        bar.style.width = progressValue + '%';
+      });
+    });
+  </script>
+
+</body>
+
+</html>

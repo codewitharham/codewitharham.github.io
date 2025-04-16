@@ -1,0 +1,64 @@
+/* css/swiper.css */
+
+/* Styles for non-Swiper view (mobile/tablet - max-width: 1024px) */
+@media (max-width: 1024px) {
+  .swiper { /* Target the main swiper container */
+    overflow: visible !important; /* Allow vertical scrolling */
+  }
+  .swiper-wrapper {
+    display: block !important; /* Stack slides vertically */
+    height: auto !important; /* Remove fixed height */
+    transform: none !important; /* Disable swiper transform */
+  }
+  .swiper-slide {
+    height: auto !important; /* Allow slides to take their natural height */
+    margin-bottom: 20px; /* Add some space between slides */
+    opacity: 1 !important; /* Ensure slides are visible */
+  }
+  .swiper-pagination {
+    display: none !important; /* Hide pagination */
+  }
+}
+
+/* Styles for Swiper view (desktop - min-width: 1025px) */
+@media (min-width: 1025px) {
+  .swiper {
+    overflow: hidden; /* Enable swiper's scrolling/sliding behavior */
+    height: 100vh; /* Or a specific pixel height if your layout requires it */
+  }
+  .swiper-wrapper {
+    display: flex; /* Arrange slides horizontally for vertical swiper */
+    flex-direction: column; /* Stack slides for vertical swiper */
+    height: 100%; /* Ensure wrapper takes full height */
+  }
+  .swiper-slide {
+    height: 100%; /* Each slide takes full height */
+    flex-shrink: 0; /* Prevent slides from shrinking */
+    overflow-y: auto; /* ADD THIS LINE: Enable vertical scrolling within the slide */
+  }
+  /* Optional: Style the pagination dots */
+  .swiper-pagination {
+    position: absolute;
+    right: 10px; /* Adjust position */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background: #000; /* Adjust color */
+    opacity: 0.2;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007bff; /* Adjust active color */
+  }
+}

@@ -1,0 +1,130 @@
+/* base.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f7;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body,html {
+  /* height: 100%; */ /* Consider removing if causing issues on mobile */
+  height: 100%;
+}
+
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: rgba(0, 255, 213, 0.2);
+}
+
+/* Navbar Section */
+nav {
+  background-color: #f8f4f4;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 52px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(51 51 51);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(51 51 51);
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: rgb(51 51 51);
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: rgb(51 51 51);
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #f8f4f4;
+}
+
+.active {
+  color: #f8f4f4;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+/* */

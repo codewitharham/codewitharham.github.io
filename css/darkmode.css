@@ -1,0 +1,234 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  body.dark {
+    background-color: #111827;
+    color: #f9f9f9;
+  }
+  
+  /* Section & Container */
+  .contact-section {
+    width: 100%;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Grid Layout */
+  .contact-grid {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100%;
+    flex-wrap: nowrap;
+  }
+  
+  /* Contact Form Box */
+  .contact-form-box {
+    flex: 1 1 50%;
+    background-color: var(--box-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    width: 50%;
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group.full {
+    flex: 1 1 100%;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  input,
+  textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .form-button {
+    background-color: #6366f1;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .form-button:hover {
+    background-color: #4f46e5;
+  }
+  
+  .contact-info-side {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+  }
+  
+  .contact-text {
+    max-width: 100%;
+  }
+  
+  .section-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6366f1;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+  }
+  
+  .contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact-info-box {
+    background-color: var(--box-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+  }
+  
+  .contact-highlight {
+    color: #6366f1;
+    font-weight: bold;
+  }
+  
+  /* Swiper Fixes */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+  }
+  
+  /* Hero Enhancements */
+  .hero-section {
+    background: linear-gradient(to bottom right, #f1f1f7, #e5e7eb);
+    padding: 6rem 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(99, 102, 241, 0.15);
+    border-radius: 50%;
+    top: 10%;
+    left: 5%;
+    z-index: 0;
+    filter: blur(50px);
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .contact-grid {
+      flex-direction: column;
+    }
+  
+    .contact-form-box,
+    .contact-info-side {
+      width: 100%;
+      max-height: unset;
+    }
+  
+    .contact-info-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-group {
+      flex: 1 1 100%;
+    }
+  
+    .section-title {
+      font-size: 1.75rem;
+    }
+  }
+  /*  */
